@@ -56,12 +56,10 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Trusted by Global Companies.
+              Join the Future of SaaS Development.
             </h2>
-            <p className="mx-auto lg:w-11/12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            <p className="mx-auto lg:w-11/12 text-base text-body dark:text-bodydark leading-relaxed">
+              Our SaaS Template Marketplace is rapidly growing, empowering developers and startups worldwide. Explore our impact through key statistics.
             </p>
           </motion.div>
 
@@ -82,12 +80,12 @@ const FunFact = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="animate_top text-center"
+              className="animate_top text-center transition-all duration-300 hover:scale-105"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                500K
+                500+
               </h3>
-              <p className="text-lg lg:text-para2">World Wide Clients</p>
+              <p className="text-lg lg:text-para2 text-body dark:text-bodydark">Unique Boilerplates</p>
             </motion.div>
             <motion.div
               variants={{
@@ -105,12 +103,12 @@ const FunFact = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
-              className="animate_top text-center"
+              className="animate_top text-center transition-all duration-300 hover:scale-105"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                1M+
+                10K+
               </h3>
-              <p className="text-lg lg:text-para2">Downloads</p>
+              <p className="text-lg lg:text-para2 text-body dark:text-bodydark">Downloads & Launches</p>
             </motion.div>
             <motion.div
               variants={{
@@ -128,12 +126,12 @@ const FunFact = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.8 }}
               viewport={{ once: true }}
-              className="animate_top text-center"
+              className="animate_top text-center transition-all duration-300 hover:scale-105"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                865
+                99%
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para2 text-body dark:text-bodydark">Satisfaction Rate</p>
             </motion.div>
           </div>
         </div>

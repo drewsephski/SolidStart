@@ -45,18 +45,18 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="mb-4 mt-5 text-lg font-medium">
+                  Your trusted partner for modern web solutions.
                 </p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
+                <p className="mb-1.5 text-lg font-semibold uppercase tracking-[5px] text-black dark:text-white">
                   contact
                 </p>
                 <a
-                  href="#"
-                  className="text-itemtitle font-medium text-black dark:text-white"
+                  href="mailto:drewsepeczi@gmail.com"
+                  className="text-lg font-medium text-black hover:text-blue-500 dark:text-white dark:hover:text-blue-500"
                 >
-                  hello@solid.com
+                  drewsepeczi@gmail.com
                 </a>
               </motion.div>
 
@@ -79,41 +79,49 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="mb-9 text-xl font-semibold text-black dark:text-white">
                     Quick Links
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
                         Home
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/#features"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Product
+                        Features
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/blog"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Careers
+                        Blog
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/templates"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Pricing
+                        Templates
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/docs"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
+                      >
+                        Docs
                       </a>
                     </li>
                   </ul>
@@ -137,41 +145,41 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="mb-9 text-xl font-semibold text-black dark:text-white">
                     Support
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/auth/signin"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Company
+                        Sign In
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/auth/signup"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Press media
+                        Sign Up
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/support"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Our Blog
+                        Support
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        href="/error"
+                        className="mb-3 inline-block font-medium hover:text-blue-500 transition-all duration-300"
                       >
-                        Contact Us
+                        404 Page
                       </a>
                     </li>
                   </ul>
@@ -195,10 +203,10 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="mb-9 text-xl font-semibold text-black dark:text-white">
                     Newsletter
                   </h4>
-                  <p className="mb-4 w-[90%]">
+                  <p className="mb-4 w-[90%] text-base font-medium">
                     Subscribe to receive future updates
                   </p>
 
@@ -207,15 +215,15 @@ const Footer = () => {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-blue-500 focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-blue-500"
                       />
 
                       <button
                         aria-label="signup to newsletter"
-                        className="absolute right-0 p-4"
+                        className="absolute right-0 top-0 p-4"
                       >
                         <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
+                          className="fill-[#757693] hover:fill-blue-500 dark:fill-white dark:hover:fill-blue-500"
                           width="20"
                           height="20"
                           viewBox="0 0 20 20"
@@ -263,19 +271,19 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <ul className="flex items-center gap-8">
+              <ul className="flex items-center gap-8 text-base font-medium">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="#" className="hover:text-blue-500 transition-all duration-300">
                     English
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="#" className="hover:text-blue-500 transition-all duration-300">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/support" className="hover:text-blue-500 transition-all duration-300">
                     Support
                   </a>
                 </li>
@@ -300,8 +308,8 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+              <p className="text-base font-medium">
+                  &copy; {new Date().getFullYear()} Solid. All rights reserved
               </p>
             </motion.div>
 
@@ -325,9 +333,9 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-blue-500"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -349,9 +357,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-blue-500"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -373,9 +381,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-blue-500"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -397,9 +405,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-blue-500"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"

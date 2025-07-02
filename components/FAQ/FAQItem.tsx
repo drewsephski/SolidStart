@@ -16,7 +16,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           onClick={() => {
             handleFaqToggle(id);
           }}
-          className="flex cursor-pointer items-center justify-between px-6 py-5 text-metatitle3 font-medium text-black dark:text-white lg:px-9 lg:py-7.5"
+          className="flex cursor-pointer items-center justify-between px-6 py-5 text-lg font-semibold text-black dark:text-white lg:px-9 lg:py-7.5 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-strokedark"
         >
           {quest}
 
@@ -27,6 +27,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
               viewBox="0 0 18 4"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="transition-all duration-300"
             >
               <path
                 d="M17.1666 0.833374H10.1666H7.83331H0.833313V3.16671H7.83331H10.1666H17.1666V0.833374Z"
@@ -40,6 +41,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
               viewBox="0 0 18 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="transition-all duration-300"
             >
               <path
                 d="M7.83331 7.83337V0.833374H10.1666V7.83337H17.1666V10.1667H10.1666V17.1667H7.83331V10.1667H0.833313V7.83337H7.83331Z"
@@ -49,7 +51,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           )}
         </button>
         <p
-          className={`border-t border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-7.5 ${
+          className={`border-t border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-7.5 text-base text-body dark:text-bodydark leading-relaxed ${
             activeFaq === id ? "block" : "hidden"
           }`}
         >

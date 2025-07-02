@@ -12,8 +12,8 @@ const Integration = () => {
           <SectionHeader
             headerInfo={{
               title: `INTEGRATIONS`,
-              subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              subtitle: `Powerful Integrations for Seamless Workflow.`,
+              description: `Our SaaS templates come pre-integrated with a wide array of essential services and tools, ensuring a smooth and efficient development process. Connect with leading platforms for payments, analytics, communication, and more.`,
             }}
           />
 
@@ -55,14 +55,14 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-07.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-07.svg"
+                  alt="Google Analytics"
                 />
               </div>
             </motion.div>
@@ -83,33 +83,14 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            ></motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-08.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-08.svg"
+                  alt="Slack"
                 />
               </div>
             </motion.div>
@@ -130,35 +111,14 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-09.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-09.svg"
+                  alt="Mailchimp"
                 />
               </div>
             </motion.div>
@@ -179,54 +139,14 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            ></motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-10.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-10.svg"
+                  alt="Stripe"
                 />
               </div>
             </motion.div>
@@ -247,35 +167,14 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-11.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-11.svg"
+                  alt="Twilio SendGrid"
                 />
               </div>
             </motion.div>
@@ -296,38 +195,32 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top w-1/6 transition-all duration-300 hover:scale-105"
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-12.svg"
-                  alt="Brand"
+                  src="/images/brand/brand-12.svg"
+                  alt="Zendesk"
                 />
               </div>
             </motion.div>
+          </div>
+
+          <div className="absolute bottom-0 left-0 right-0 -z-1 mx-auto h-full w-full">
+            <Image
+              fill
+              src="/images/shape/shape-dotted-light.svg"
+              alt="Dotted"
+              className="dark:hidden"
+            />
+            <Image
+              fill
+              src="/images/shape/shape-dotted-dark.svg"
+              alt="Dotted"
+              className="hidden dark:block"
+            />
           </div>
         </div>
       </section>

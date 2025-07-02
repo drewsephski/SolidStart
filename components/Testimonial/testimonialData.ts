@@ -5,34 +5,34 @@ import { Testimonial } from "@/types/testimonial";
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Alice Smith",
+    designation: "Founder @TechStart",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "The SaaS Template Marketplace has been a game-changer for us. We found a robust boilerplate that saved us months of development time. The quality and documentation are top-notch!",
   },
   {
     id: 2,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Bob Johnson",
+    designation: "CTO @InnovateNow",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "As a CTO, I'm always looking for ways to accelerate our development cycles. This marketplace delivers exactly that. The Next.js 15+ templates are incredibly well-structured and easy to extend.",
   },
   {
     id: 3,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Charlie Brown",
+    designation: "Lead Dev @FutureApp",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "The seamless integrations and clear documentation made it incredibly easy to customize our chosen template. We were able to launch our MVP much faster than anticipated.",
   },
   {
     id: 4,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Diana Prince",
+    designation: "CEO @GrowthHub",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "The support community is fantastic! Whenever we had a question, we received quick and helpful responses. It's more than just templates; it's a complete ecosystem.",
   },
 ];

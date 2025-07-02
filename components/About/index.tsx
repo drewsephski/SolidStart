@@ -62,18 +62,17 @@ const About = () => {
               <span className="font-medium uppercase text-black dark:text-white">
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   New
-                </span>{" "}
-                SaaS Boilerplate for Next.js
+                </span> {" "}
+                <span className="font-bold">The Future of SaaS Development</span>
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
+                
+                <span className="relative inline-block before:absolute before:bottom-0 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-blue-200 dark:before:bg-blue-500 bg-opacity-40">
+                Your One-Stop Shop for SaaS Boilerplates
                 </span>
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+              <p className="text-base text-body dark:text-bodydark leading-relaxed">
+                Our marketplace provides a comprehensive suite of high-quality SaaS boilerplates, meticulously crafted to accelerate your development process. From authentication to database integration, find everything you need to launch your next big idea.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -83,10 +82,10 @@ const About = () => {
                   </p>
                 </div>
                 <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    React 18, Next.js 13 and TypeScript
+                  <h3 className="mb-0.5 text-xl font-semibold text-black dark:text-white">
+                    React 19, Next.js 15+ and TypeScript
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p className="text-base text-body dark:text-bodydark leading-relaxed">Built with the latest and most robust web technologies for optimal performance and developer experience.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -96,10 +95,10 @@ const About = () => {
                   </p>
                 </div>
                 <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Fully Customizable
+                  <h3 className="mb-0.5 text-xl font-semibold text-black dark:text-white">
+                    Fully Customizable & Extensible
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p className="text-base text-body dark:text-bodydark leading-relaxed">Tailor every aspect of your chosen boilerplate to fit your unique vision and scale with your business needs.</p>
                 </div>
               </div>
             </motion.div>
@@ -131,25 +130,24 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
+                <span className="font-bold">Seamless Integrations and Rapid Deployment</span>
               </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Packed with All Essential {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
+      
+                <span className="relative inline-block before:absolute before:bottom-0 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-blue-200 dark:before:bg-blue-500 bg-opacity-40">
+                All Essential Integrations for Rapid Deployment
                 </span>
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+              <p className="text-base text-body dark:text-bodydark leading-relaxed">
+                Every boilerplate is pre-configured with essential services like secure authentication, robust databases, and flexible payment gateways, ensuring a smooth and efficient deployment process. Focus on innovation, not infrastructure.
               </p>
               <div>
                 <a
                   href="#"
-                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary font-medium"
                 >
                   <span className="duration-300 group-hover:pr-2">
-                    Know More
+                    Browse Boilerplates
                   </span>
                   <svg
                     width="14"
@@ -181,13 +179,13 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="/images/about/about-light-02.svg"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="/images/about/about-dark-02.svg"
                 alt="About"
                 className="hidden dark:block"
                 fill

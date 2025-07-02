@@ -4,16 +4,134 @@ description: Using Bootstrap Templates Downloaded from GrayGrids
 date: 2023-1-22
 ---
 
-This Style Guide is followed for this template.
+This Style Guide outlines the typographic hierarchy, text formatting, and common Markdown elements used throughout this template. Adhering to these guidelines ensures consistency, readability, and a professional appearance across all documentation and content.
 
-# H1 This the Heading One
+## Typographic Hierarchy
 
-## H2 This the Heading Two
+A well-defined typographic hierarchy helps users quickly scan and understand the structure of your content.
 
-### H3 This the Heading Three
+# H1: Main Page Title
+This is the largest heading, typically used for the main title of a page or a major section. It should be used sparingly, usually once per page.
 
-#### H4 This the Heading Four
+## H2: Section Heading
+Used for major sections within a page. H2s break down the content into digestible parts, making it easier to navigate.
 
-##### H5 This the Heading Five
+### H3: Sub-section Heading
+For sub-sections under an H2. H3s provide further granularity and organization within a section.
 
-P this is normal paragraph style
+#### H4: Minor Heading
+Used for smaller divisions of content, often for specific points or lists within a sub-section.
+
+##### H5: Detail Heading
+The smallest heading, used for very specific details or labels.
+
+###### H6: Fine Print Heading
+Rarely used, but available for extremely fine-grained organization or technical labels.
+
+## Paragraph Text
+
+P: This is the standard paragraph style. It is used for the main body of your content. Ensure paragraphs are concise and focused on a single idea to improve readability.
+
+**Example:**
+This is an example of a standard paragraph. It should be easy to read and provide clear information. The line height and font size are optimized for comfortable reading on various devices.
+
+## Text Formatting
+
+### Bold Text
+To make text **bold**, use two asterisks or two underscores around the text.
+**Example:** `**important**` or `__important__`
+
+### Italic Text
+To make text *italic*, use one asterisk or one underscore around the text.
+*Example:* `*emphasis*` or `_emphasis_`
+
+### Strikethrough Text
+To apply ~~strikethrough~~, use two tildes around the text.
+~~Example:~~ `~~deleted text~~`
+
+### Code Snippets
+For `inline code`, use backticks.
+`Example: ` `const variable = "value";`
+
+For code blocks, use triple backticks and specify the language for syntax highlighting.
+
+```javascript
+// Example JavaScript code block
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("World");
+```
+<CodeCopyButton code={`function greet(name) {
+  console.log(\`Hello, ${name}!\`);
+}
+
+greet("World");`} />
+
+```html
+<!-- Example HTML code block -->
+<div class="container">
+  <h1>Welcome</h1>
+  <p>This is a paragraph.</p>
+</div>
+```
+<CodeCopyButton code={`<div class="container">
+  <h1>Welcome</h1>
+  <p>This is a paragraph.</p>
+</div>`} />
+
+## Lists
+
+### Unordered Lists
+Use hyphens, asterisks, or plus signs for unordered lists.
+*   Item one
+*   Item two
+    *   Nested item
+*   Item three
+
+### Ordered Lists
+Use numbers followed by a period for ordered lists.
+1.  First item
+2.  Second item
+    1.  Nested ordered item
+3.  Third item
+
+## Links
+
+To create a [link](https://example.com), use square brackets for the link text and parentheses for the URL.
+[Example Link to Google](https://www.google.com)
+
+## Blockquotes
+
+Use the `>` character for blockquotes.
+> "The only way to do great work is to love what you do."
+> - Steve Jobs
+
+## Horizontal Rule
+
+To insert a horizontal rule, use three or more hyphens, asterisks, or underscores on a line by themselves.
+---
+
+## Images
+
+To embed an image, use an exclamation mark, followed by square brackets for alt text, and parentheses for the image URL.
+![Alt text for image](https://via.placeholder.com/400x200 "Optional title for image")
+
+## Tables
+
+Create tables using hyphens for the header separator and pipes for column dividers.
+
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |
+
+## Notes and Warnings
+
+You can use custom components or simple Markdown for notes, tips, or warnings.
+
+**Note:** This is an important note.
+**Tip:** Here's a helpful tip.
+**Warning:** Be cautious with this action.

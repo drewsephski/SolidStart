@@ -8,6 +8,12 @@ const menuData: Menu[] = [
     path: "/",
   },
   {
+    id: 1.1,
+    title: "Chat",
+    newTab: false,
+    path: "/chat",
+  },
+  {
     id: 2,
     title: "Features",
     newTab: false,
@@ -18,6 +24,12 @@ const menuData: Menu[] = [
     title: "Blog",
     newTab: false,
     path: "/blog",
+  },
+  {
+    id: 2.2,
+    title: "Templates",
+    newTab: false,
+    path: "/templates",
   },
   {
     id: 2.3,
@@ -65,6 +77,12 @@ const menuData: Menu[] = [
         title: "404",
         newTab: false,
         path: "/error",
+      },
+      {
+        id: 37,
+        title: "Subscription",
+        newTab: false,
+        path: "/subscription",
       },
     ],
   },

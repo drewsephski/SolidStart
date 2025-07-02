@@ -174,30 +174,30 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
             >
-              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Find us
+              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white">
+                Contact Us
               </h2>
 
-              <div className="5 mb-7">
+              <div className="mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+                  Our Location
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>Chicago, IL</p>
               </div>
-              <div className="5 mb-7">
+              <div className="mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="mailto:drewsepeczi@gmail.com">drewsepeczi@gmail.com</a>
                 </p>
               </div>
-              <div>
+              <div className="mb-7">
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="tel:+12243431711">+1 (224) 343-1711</a>
                 </p>
               </div>
             </motion.div>

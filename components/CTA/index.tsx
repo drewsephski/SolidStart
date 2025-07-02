@@ -29,12 +29,10 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Join With Us Today & Increase Your Productivity
+                Ready to Launch Your SaaS? Start Here.
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+              <p className="text-base text-body dark:text-bodydark leading-relaxed">
+                Browse our extensive collection of high-quality SaaS boilerplates and kickstart your project with confidence. Get access to pre-built features, modern tech stacks, and comprehensive documentation.
               </p>
             </motion.div>
             <motion.div
@@ -61,13 +59,13 @@ const CTA = () => {
                   height={299}
                   src="/images/shape/shape-06.png"
                   alt="Saly"
-                  className="hidden xl:block"
+                  className="hidden xl:block transition-all duration-300 hover:scale-105"
                 />
                 <a
                   href="/auth/signup"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black transition-all duration-300 hover:scale-105"
                 >
-                  Sign up free
+                  Explore Boilerplates
                   <Image
                     width={20}
                     height={20}

@@ -6,87 +6,208 @@ date: 2023-1-25
 
 ## Introduction
 
-This documentation covers the instruction on how to install and use the Bootstrap templates, and answers to any common problems and issues you may face while using the templates.
+This comprehensive guide provides detailed instructions on how to effectively install, customize, and utilize Bootstrap templates downloaded from GrayGrids. It also addresses common problems and offers solutions to issues you might encounter during the development process. Bootstrap templates are pre-designed web pages or components built using the Bootstrap framework, offering a responsive, mobile-first approach to web development. They provide a solid foundation for quickly launching professional-looking websites.
 
-If you have any question that is beyond the scope of this documentation feel free to [Open a Support Ticket](https://uideck.com/support/) or reach out to us on [Discord](https://pimjo.com/discord).
+Should you have any questions that extend beyond the scope of this documentation, please do not hesitate to [Open a Support Ticket](https://uideck.com/support/) or connect with us on [Discord](https://pimjo.com/discord). Our team is committed to providing prompt assistance.
 
-We will get back to you ASAP.
+## Downloading Templates
 
-## Downloading Templates:
+All available templates, especially those included in the comprehensive bundle, can be accessed and downloaded directly from your GrayGrids account. You retain the flexibility to download these templates at any time, provided your account remains active.
 
-You can download all available templates that are available under the big bundle, by visiting your account.
+## **Installing Templates**
 
-You can download it anytime you want, as long as you have an account with us.
+To begin using your downloaded Bootstrap template, follow these installation steps carefully:
 
-## **Installing Templates**:
+**Step 1: Download the Template**
+Navigate to your GrayGrids account and download the desired Bootstrap template. The download will typically be a `.zip` file containing all necessary project files.
 
-To be able to use the template, first, you’ll have to install it. Here are the steps you will have to take to install it:
+**Step 2: Extract the Zip File**
+Locate the downloaded `.zip` file and extract its contents to a directory of your choice. This action will reveal the template's complete file structure, including all assets, HTML files, and configuration files.
 
-**Step#1:** Download the template from GrayGrids. When you download the template, you’ll get a zip file.
+**Step 3: Open in Code Editor and Customize**
+Open the extracted template folder in your preferred code editor (e.g., VS Code, Sublime Text, Atom). This is where you will begin customizing the content, styling, and functionality to meet your specific project requirements. Familiarize yourself with the HTML structure and linked CSS/JS files.
 
-**Step#2**: Unzip/Extract the zip file. After you’ve extracted it you’ll find all the files and assets you’ll need.
+**Step 4: Upload to Your Server**
+Once you have customized the template, you need to upload it to your web server. You can do this via:
+*   **cPanel:** Log in to your cPanel, navigate to the File Manager, and upload the extracted files to your public web directory (e.g., `public_html` or `www`).
+*   **FTP Client:** Use an FTP client like Filezilla. Connect to your server using your FTP credentials and transfer all template files to the designated root directory of your website (e.g., `/`).
 
-**Step#3**: Now open up the folder in your code editor and update the content according to your need.
-
-**Step#4**: After you’ve updated the content, now go to your cPanel or open your FTP client (like Filezilla) and upload the template on your server. Make sure to upload it to the root directory.
-
-Installing is done, now go to **yourdomainname.com/index.html**. You should see the website live.
+**Verification:**
+After successful upload, open your web browser and navigate to `yourdomainname.com/index.html` (or just `yourdomainname.com` if `index.html` is in the root). You should now see your customized website live.
 
 ## **Directory Structure**
 
-When you extract the template folder, you’ll see something like this inside the folder:
+Upon extracting the template folder, you will observe a well-organized directory structure designed for clarity and ease of use:
 
 ```
-|-- Template Folder
-    |-- assets
-    |    |-- css
-    |       |-- All CSS Files
-    |    |-- scss
-    |       |-- All SCSS Files
-    |    |-- js
-    |       |-- All JS Files
-    |    |-- fonts
-    |       |-- All Fonts Files
-    |    |-- images
-    |       |-- All Images
-    |-- index.html and All HTML Files
+|-- Template Folder/
+    |-- assets/                 # Contains all static assets for the template
+    |    |-- css/               # All compiled CSS files, including main.css
+    |       |-- main.css        # Main stylesheet for global styles
+    |       |-- other-styles.css # Any additional component-specific styles
+    |    |-- scss/              # Source SCSS files for pre-processing (if applicable)
+    |       |-- _variables.scss # SCSS variables for colors, fonts, etc.
+    |       |-- _mixins.scss    # Reusable SCSS mixins
+    |       |-- style.scss      # Main SCSS file that imports other partials
+    |    |-- js/                # All JavaScript files for interactivity
+    |       |-- main.js         # Main JavaScript file for custom scripts
+    |       |-- plugins.js      # Bundled third-party JavaScript plugins
+    |    |-- fonts/             # Custom font files (e.g., .woff, .ttf)
+    |       |-- fontawesome.woff # Example font file
+    |    |-- images/            # All image assets used in the template
+    |       |-- hero-bg.jpg     # Background images, logos, icons
+    |       |-- logo.png
+    |-- index.html              # The main entry point HTML file
+|-- about.html              # Example of other HTML pages
+|-- contact.html
 ```
+<CodeCopyButton code={`|-- Template Folder/
+    |-- assets/                 # Contains all static assets for the template
+    |    |-- css/               # All compiled CSS files, including main.css
+    |       |-- main.css        # Main stylesheet for global styles
+    |       |-- other-styles.css # Any additional component-specific styles
+    |    |-- scss/              # Source SCSS files for pre-processing (if applicable)
+    |       |-- _variables.scss # SCSS variables for colors, fonts, etc.
+    |       |-- _mixins.scss    # Reusable SCSS mixins
+    |       |-- style.scss      # Main SCSS file that imports other partials
+    |    |-- js/                # All JavaScript files for interactivity
+    |       |-- main.js         # Main JavaScript file for custom scripts
+    |       |-- plugins.js      # Bundled third-party JavaScript plugins
+    |    |-- fonts/             # Custom font files (e.g., .woff, .ttf)
+    |       |-- fontawesome.woff # Example font file
+    |    |-- images/            # All image assets used in the template
+    |       |-- hero-bg.jpg     # Background images, logos, icons
+    |       |-- logo.png
+    |-- index.html              # The main entry point HTML file
+|-- about.html              # Example of other HTML pages
+|-- contact.html`} />
+
+**Explanation of Directories:**
+*   `assets/`: This is the primary folder for all static resources.
+    *   `css/`: Contains the compiled CSS files. `main.css` is typically where the core styling resides.
+    *   `scss/`: If the template uses Sass/SCSS for styling, this folder will contain the source `.scss` files. This allows for more organized and maintainable stylesheets.
+    *   `js/`: Holds all JavaScript files responsible for dynamic behavior, animations, and interactive elements.
+    *   `fonts/`: Stores custom font files used in the template.
+    *   `images/`: Contains all visual assets such as logos, background images, icons, and other graphics.
+*   `*.html`: These are the main HTML files that constitute the different pages of your website. `index.html` is usually the homepage.
 
 ## **Customization**
 
+Customizing your Bootstrap template allows you to align it with your brand identity and specific design requirements.
+
 ### **Changing Default Theme Color**
 
-If you want to change the default Theme Color, open `assets->css>main.css` file. And find the default color and replace it with your preferred color.
+To modify the default theme color, follow these steps:
+1.  Open the `assets/css/main.css` file in your code editor.
+2.  Search for the default color values (e.g., `#6577F2`, `rgb(101, 119, 242)`). These are often defined as CSS variables or directly applied to elements.
+3.  Replace these values with your desired hex code, RGB, or HSL color.
 
-**Note:** If you are familiar with Scss, you can change the color by changing the Scss variable.
+**Example (CSS):**
+```css
+:root {
+  --primary-color: #6577F2; /* Original */
+  --secondary-color: #333;
+}
+
+/* Change to a new primary color */
+:root {
+  --primary-color: #FF5733; /* New vibrant orange */
+}
+```
+<CodeCopyButton code={`:root {
+  --primary-color: #6577F2; /* Original */
+  --secondary-color: #333;
+}
+
+/* Change to a new primary color */
+:root {
+  --primary-color: #FF5733; /* New vibrant orange */
+}`} />
+
+**Note for SCSS Users:**
+If the template utilizes SCSS, the most efficient way to change the theme color is by modifying the SCSS variables.
+1.  Locate the `assets/scss/_variables.scss` file (or a similar file named `_colors.scss`).
+2.  Find the variable defining the primary color (e.g., `$primary-color`, `$theme-color`).
+3.  Update its value to your preferred color. After saving, you will need to compile your SCSS to CSS for the changes to take effect.
+
+**Example (SCSS):**
+```scss
+// assets/scss/_variables.scss
+$primary-color: #6577F2; // Original color
+$secondary-color: #333;
+
+// Change to a new primary color
+$primary-color: #00BFFF; // New deep sky blue
+```
+<CodeCopyButton code={`// assets/scss/_variables.scss
+$primary-color: #6577F2; // Original color
+$secondary-color: #333;
+
+// Change to a new primary color
+$primary-color: #00BFFF; // New deep sky blue`} />
 
 ### **Changing Default Font Family**
 
-Just like the color if you want to change the default Font, then go to `assets->css>main.css`
+To change the default font family used throughout the template:
+1.  Open the `assets/css/main.css` file.
+2.  Search for `font-family` properties. These are typically applied to the `body` element or specific text elements.
+3.  Replace the existing font stack with your desired font family.
 
-and find all the font-family then replace its property with your own font-family.
+**Important:** Ensure that the font you wish to use is properly included in your project. This usually involves linking a Google Fonts URL in your HTML `<head>` or importing a font file in your CSS.
 
-Make sure to include the font’s URL in your HTML or CSS fle. Otherwise, it won’t work.
+**Example (CSS):**
+```css
+body {
+  font-family: "Inter", sans-serif; /* Original */
+}
 
-**Note:** If you are familiar with Scss, you change the font-family by changing the Scss variable.
+/* Change to a new font family */
+body {
+  font-family: "Roboto", Arial, sans-serif; /* New font stack */
+}
+```
+<CodeCopyButton code={`body {
+  font-family: "Inter", sans-serif; /* Original */
+}
 
-## **Plugins**
+/* Change to a new font family */
+body {
+  font-family: "Roboto", Arial, sans-serif; /* New font stack */
+}`} />
 
-To add interaction to the templates we’ve used these Vanilla JS and CSS Plugins.
+**Note for SCSS Users:**
+Similar to colors, if SCSS is used, you can modify font variables in `assets/scss/_variables.scss` (or `_typography.scss`).
+```scss
+// assets/scss/_variables.scss
+$font-body: "Inter", sans-serif; // Original font
 
-- [Glightbox](https://biati-digital.github.io/glightbox/)
-- [Tiny Slider](https://github.com/ganlanyuan/tiny-slider)
-- [Wow JS](https://wowjs.uk/docs.html)
-- [Animate CSS](https://animate.style/) - with some modification
+// Change to a new font
+$font-body: "Open Sans", sans-serif; // New font
+```
+<CodeCopyButton code={`// assets/scss/_variables.scss
+$font-body: "Inter", sans-serif; // Original font
 
-## **Images**
+// Change to a new font
+$font-body: "Open Sans", sans-serif; // New font`} />
+Remember to recompile your SCSS after making changes.
 
-We used images from Unsplash
+## **Plugins and Libraries**
 
-- [Unsplash](https://unsplash.com/)
+To enhance interactivity and visual appeal, these Bootstrap templates often integrate various Vanilla JavaScript and CSS plugins. Here are some commonly used ones:
 
-## **Icons**
+*   **[Glightbox](https://biati-digital.github.io/glightbox/)**: A lightweight, pure JavaScript lightbox library for displaying images, videos, and iframes in a responsive and accessible modal.
+*   **[Tiny Slider](https://github.com/ganlanyuan/tiny-slider)**: A responsive, touch-friendly, and lightweight JavaScript slider for carousels and image galleries, with no dependencies.
+*   **[Wow JS](https://wowjs.uk/docs.html)**: A JavaScript library that reveals CSS animation as you scroll down a page. It's perfect for animating elements as they enter the viewport.
+*   **[Animate CSS](https://animate.style/)**: A library of ready-to-use, cross-browser animations for use in your web projects. It's often used in conjunction with Wow JS to trigger animations on scroll. (Note: Some templates might include a modified version for specific effects.)
 
-For icons, we’ve used Lineicons.
+## **Image Resources**
 
-- [Lineicons](https://lineicons.com/)
+The demo images used in the templates are sourced from high-quality, royalty-free platforms.
+
+*   **[Unsplash](https://unsplash.com/)**: A popular platform offering a vast collection of free-to-use, high-resolution stock photography. These images are ideal for placeholders or for direct use in your projects, provided you adhere to their licensing terms.
+
+## **Iconography**
+
+For a consistent and modern icon set, these templates typically utilize:
+
+*   **[Lineicons](https://lineicons.com/)**: A comprehensive library of over 2000+ line icons, designed with simplicity and elegance. Lineicons are lightweight and scalable, making them perfect for web interfaces, ensuring crisp display across various devices and resolutions.

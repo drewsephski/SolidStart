@@ -6,47 +6,93 @@ date: 2023-1-23
 
 ## Introduction
 
-This part of the documentation shows you how you can configure a contact form with Tailwind CSS Templates and Bootstrap Templates.
+This documentation provides a comprehensive guide on configuring and integrating contact forms within both Tailwind CSS and Bootstrap templates. A functional contact form is crucial for user engagement, allowing visitors to communicate directly with you. This guide will cover traditional PHP-based solutions and recommend a modern, serverless approach using FormBold.
 
-## Using PHP Contact Form:
+## Using PHP Contact Form (Legacy Method)
 
-For Bootstrap templates, we used to provide a PHP script that only can be used for PHP servers,
+For older Bootstrap templates, a PHP script was often provided to handle form submissions. This method relies on a PHP-enabled server with the `phpmailer` function properly configured and running.
 
-if `phpmailer` function is up and running smoothly.
+**Configuration Steps:**
+1.  **Locate the PHP Script:** Open the `assets/php/contact.php` file within your template's directory.
+2.  **Update Email Address:** Find the line where the recipient email address is defined (e.g., `$to = "your-email@example.com";`). Replace `"your-email@example.com"` with your actual email address where you wish to receive form submissions.
 
-Here is how it works: Just **replace the email address with your own** from
+**Example (`contact.php` snippet):**
+```php
+<?php
+// The email address where you want to receive messages
+$to = "your-email@example.com"; // <--- CHANGE THIS EMAIL ADDRESS
 
-```bash
-assets->php>contact.php
+// Subject of the email
+$subject = "New Contact Form Submission";
+
+// ... rest of the PHP script for handling form data and sending email
+?>
 ```
+<CodeCopyButton code={`<?php
+// The email address where you want to receive messages
+$to = "your-email@example.com"; // <--- CHANGE THIS EMAIL ADDRESS
 
-This procedure should work if everything is configured properly on the server side.
+// Subject of the email
+$subject = "New Contact Form Submission";
 
-## Using FormBold: A universal Form API (Recommended):
+// ... rest of the PHP script for handling form data and sending email
+?>`} />
 
-[FormBold](https://formbold.com/) is a powerful form API and serverless form backend that works with all hosting, SSG, and frameworks.
+**Important Considerations:**
+*   This method requires a server environment that supports PHP.
+*   The `phpmailer` function (or similar mail sending capabilities) must be enabled and correctly configured on your server.
+*   Security: PHP forms can be vulnerable to spam and injection attacks if not properly secured. Consider adding server-side validation and reCAPTCHA.
 
-We highly recommend, using a serverless end-point ([FormBold](https://formbold.com/)) to make contact form dynamic. Since most users nowadays don't use PHP servers.
+## Using FormBold: A Universal Form API (Recommended)
 
-Here’s how to connect [FormBold](https://formbold.com/) API with your contact form:
+[FormBold](https://formbold.com/) offers a robust, serverless form backend solution that seamlessly integrates with any hosting environment, Static Site Generator (SSG), or JavaScript framework. Given that many modern web projects do not rely on PHP servers, FormBold provides a highly recommended, efficient, and scalable alternative for making your contact forms dynamic.
 
-**Step#1**: Create an account on [FormBold](https://formbold.com/) and create a Form.
+**Benefits of FormBold:**
+*   **Serverless:** No need to manage server-side code or databases.
+*   **Universal Compatibility:** Works with any frontend technology.
+*   **Spam Protection:** Built-in reCAPTCHA integration.
+*   **Integrations:** Connects with popular services like Webhooks, Slack, Notion, Google Sheets, and more.
+*   **Ease of Use:** Simple setup and management through a user-friendly dashboard.
 
-**Step#2**: Integrate the API into your contact Form using this code. Make sure your Form’s method is set to **POST**
+**Connecting FormBold API with Your Contact Form:**
 
+**Step 1: Create a FormBold Account and Form**
+1.  Visit [FormBold.com](https://formbold.com/) and sign up for a free account.
+2.  Once logged in, navigate to your dashboard and create a new form. FormBold will provide you with a unique form endpoint URL.
+
+**Step 2: Integrate the API into Your HTML Form**
+Modify your existing HTML contact form to point to your unique FormBold endpoint. Ensure your form's `method` attribute is set to `POST`.
+
+**HTML Form Example:**
 ```html
 <form action="https://formbold.com/s/unique_form_id" method="POST">
-  <input type="email" placeholder="email" name="email" />
-  <input type="text" placeholder="subject" name="subject" />
-  <textarea name="message" placeholder="message"></textarea>
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" placeholder="your.email@example.com" name="email" required />
+  </div>
 
-  <button type="submit">Send Message</button>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" placeholder="Enter subject" name="subject" required />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
 ```
 
-You’ll find the `unique_form_id` in the [FormBold](https://formbold.com/) dashboard under \***\*Settings>Integration.\*\***
+**Locating Your `unique_form_id`:**
+Your `unique_form_id` is crucial for directing submissions to your FormBold form. You can find this ID in your [FormBold dashboard](https://formbold.com/dashboard) under **Settings > Integration** for the specific form you created. Copy this ID and paste it into the `action` attribute of your HTML `<form>` tag.
 
-Copy and paste it to the **action** attribute.
+**Advanced FormBold Features:**
+Beyond basic setup, FormBold offers a suite of advanced features to enhance your contact form:
+*   **Spam Protection:** Implement reCAPTCHA to prevent bot submissions.
+*   **Custom Redirects:** Redirect users to a "thank you" page after submission.
+*   **Email Notifications:** Configure custom email templates for notifications.
+*   **Integrations:** Connect your form submissions to various third-party services for automated workflows.
 
-This is just the basic setup, FormBold has a lot of great features like re-captcha for spam protection, and the ability to integrate it with other apps like Webhook, Slack, Notion, and GoogleSheet.
-Learn more about [FormBold](https://formbold.com/) [here](https://formbold.com/).
+For more in-depth information and advanced configurations, explore the official [FormBold documentation](https://formbold.com/docs).

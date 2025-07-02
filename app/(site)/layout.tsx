@@ -1,15 +1,16 @@
-"use client";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
-import { ThemeProvider } from "next-themes";
+import { ThemeProviders } from "../components/ThemeProviders";
 import { Inter } from "next/font/google";
 import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
-import ToasterContext from "../context/ToastContext";
+import { createContext } from 'react';
+import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { ClerkProviderWrapper } from "../components/ClerkProviderWrapper";
 
 export default function RootLayout({
   children,
@@ -17,21 +18,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
-          <Lines />
-          <Header />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProviderWrapper>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`dark:bg-black ${inter.className}`}>
+          <ThemeProviders
+            enableSystem={false}
+            attribute="class"
+            defaultTheme="dark"
+          >
+            <div className="flex flex-col min-h-screen">
+              <Lines />
+              <Header />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+              <ScrollToTop />
+            </div>
+          </ThemeProviders>
+        </body>
+      </html>
+    </ClerkProviderWrapper>
   );
 }
